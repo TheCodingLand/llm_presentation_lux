@@ -1,4 +1,4 @@
-name: manim
+name: presentation
 channels:
   - conda-forge
 dependencies:
