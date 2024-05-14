@@ -1,0 +1,7 @@
+models/*
+*.pyc
+__pycache__/
+Tooll-v3.9.1/
+media_copyright/
+old/
+presenter_notes.md

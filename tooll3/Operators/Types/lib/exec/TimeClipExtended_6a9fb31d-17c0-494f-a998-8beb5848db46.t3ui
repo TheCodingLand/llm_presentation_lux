@@ -1,0 +1,49 @@
+{
+  "Id": "6a9fb31d-17c0-494f-a998-8beb5848db46"/*TimeClipExtended*/,
+  "Description": "",
+  "InputUis": [
+    {
+      "InputId": "e8eae481-624c-48b0-9854-ee267f36348f"/*Command*/,
+      "Relevancy": "Required",
+      "Position": {
+        "X": -200.0,
+        "Y": 0.0
+      }
+    },
+    {
+      "InputId": "be17c23d-ec81-4294-a751-c9978c938b14"/*TimeElapsedVariableName*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 45.0
+      },
+      "Usage": "Default"
+    },
+    {
+      "InputId": "be17c23d-ec81-4294-a451-c9978c935b14"/*SlotStartVariableName*/,
+      "Position": {
+        "X": -200.0,
+        "Y": 90.0
+      },
+      "Usage": "Default"
+    }
+  ],
+  "SymbolChildUis": [],
+  "OutputUis": [
+    {
+      "OutputId": "701cb130-03f5-4c1e-be36-c6cd6cfaca54"/*Output*/,
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0
+      }
+    }
+  ],
+  "Links": [
+    {
+      "Id": "5424b82d-2a30-4ff5-806d-d49833943739",
+      "Title": "Video Tutorial",
+      "Description": "",
+      "LinkUrl": "https://youtu.be/cGyCEkCJQUk",
+      "LinkType": "TutorialVideo"
+    }
+  ]
+}

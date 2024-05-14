@@ -1,0 +1,29 @@
+services:
+  ollama-backend: # docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama # docker exec -it ollama ollama run llama3
+    image:  ollama/ollama
+    container_name: ollama_presentation
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./models:/root/.ollama
+    deploy:
+      resources:
+        limits:
+          memory: 40000M
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    labels:
+     - "traefik.http.routers.ollama_demo.rule=Host(`llama.${DOMAIN}`)"
+     - "traefik.http.routers.ollama_demo.entrypoints=web,websecure"
+     - "traefik.enable=true"
+     - "traefik.http.services.ollama_demo.loadbalancer.server.port=11434"
+     - "traefik.http.routers.ollama_demo.tls.certresolver=myresolver"
+     - "traefik.http.routers.ollama_demo.tls=true"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+    

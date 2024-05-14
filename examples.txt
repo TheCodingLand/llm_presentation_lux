@@ -1,0 +1,21 @@
+
+
+single class demo: 
+- the support person was not helpful
+- the website is not working
+
+
+multiclass:
+
+The service is OK, but the electronic plafrom is slow. The support person was not helpful. 
+I was very pleased with the price. I encountered several display issues on the website. The product was broken in a few days.
+
+
+
+
+model = taozhiyuai/llama-3-aplite-instruct-4x8b-gguf-moe:q6k
+['generic', 'price', 'delivery', 'website', 'support and customer service', 'product quality']
+"""
+The delivery service is OK. The support person was not helpful. 
+I was very pleased with the price. I encountered several display issues on the website. my item was broken in a few days.
+"""
